@@ -36,7 +36,7 @@ print(result_df_close)
 result_df_close.to_csv("close_price.txt", index=False, sep='\t')
 
 
-drive_connection.upload_to_drive('close_price.txt')
+# drive_connection.upload_to_drive('close_price.txt')
 update_bq_close_price.update_close_price()
 
 
